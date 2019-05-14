@@ -84,7 +84,8 @@ kubelet_load_modules: false
 kubelet_max_pods: 110
 
 ## Support custom flags to be passed to kubelet
-kubelet_custom_flags: []
+kubelet_custom_flags: 
+  - "--allow-privileged=true"
 
 ## Support custom flags to be passed to kubelet only on nodes, not masters
 kubelet_node_custom_flags: []
