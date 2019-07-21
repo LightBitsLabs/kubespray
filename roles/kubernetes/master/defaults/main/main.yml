@@ -138,7 +138,8 @@ kube_webhook_token_auth: false
 # kube_webhook_token_auth_url: https://...
 
 ## Variables for custom flags
-apiserver_custom_flags: []
+apiserver_custom_flags: 
+  - "--allow-privileged=true"
 
 # List of the preferred NodeAddressTypes to use for kubelet connections.
 kubelet_preferred_address_types: 'InternalDNS,InternalIP,Hostname,ExternalDNS,ExternalIP'
